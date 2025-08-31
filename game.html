@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="form">
+            <input type="text" id="name" name="name" class="name" placeholder="Enter your name" required> <!-- required:must be filled -->
+            <button type="submit" class="submit">Start Game</button>
+        </form>
+    </div>
+    <div class="main-container">
+        <div class="game-container">
+            <h1>Memory Card Game</h1>
+            <h2></h2>
+            <div class="btn-container">
+                <div class="line-one">
+                    <div class="btn red" type="button" id="red"></div>
+                    <div class="btn yellow" type="button" id="yellow"></div>
+                </div>
+                <div class="line-two">
+                    <div class="btn green" type="button" id="green"></div>
+                    <div class="btn purple" type="button" id="purple"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scoreboard-container">
+            <h1 class="scoreheading">Scoreboard</h1>
+            <div id="highest-score"></div>
+            <div class="scoreboard"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
